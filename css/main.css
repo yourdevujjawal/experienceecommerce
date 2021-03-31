@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "GothamBookRegular";
+  src: url("../fonts/GothamBookRegular.otf");
+}
+
+@font-face {
+  font-family: "GothamMediumRegular";
+  src: url("../fonts/GothamMediumRegular.ttf");
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/GothamBold.otf");
+}
+
+@font-face {
+  font-family: "NeutraTextBold";
+  src: url("../fonts/NeutraTextBold.otf");
+}
+
+body {
+  font-family: "GothamBookRegular", sans-serif;
+}
+
+.navbar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #000;
+}
+
+.navbar.navbar-dark .navbar-nav .separator {
+  width: 1px;
+  border-left: 1px solid #b48f49;
+  margin: 0 15px;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  color: #fff;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active .nav-link:hover {
+  color: #fff;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  padding: 0.1rem 1rem;
+  color: #b48f49;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: #90723a;
+}
+
+@media (max-width: 991px) {
+  .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+  }
+}
+
+.adani-logo {
+  width: 110px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
+}
+
+.carousel-caption {
+  text-align: left;
+  bottom: 20%;
+  font-family: "GothamMediumRegular", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .carousel-caption {
+    bottom: 10%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    bottom: 20%;
+    left: 5%;
+  }
+}
+
+.carousel-caption__line1 {
+  background: #0f6fb4;
+  letter-spacing: 1px;
+  padding: 5px 5px 4px;
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.carousel-caption__line2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.4;
+  text-shadow: -1px 2px 15px rgba(0, 0, 0, 0.7);
+  font-family: "NeutraTextBold", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .carousel-caption__line2 {
+    font-size: 22px;
+  }
+}
+
+.carousel-caption__line3 {
+  font-size: 18px;
+  text-shadow: -1px 2px 15px rgba(0, 0, 0, 0.7);
+  margin: 0 0 25px 0;
+  width: 60%;
+}
+
+@media (max-width: 991px) {
+  .carousel-caption__line3 {
+    font-size: 13px;
+  }
+}
+
+.video-btn {
+  color: #fff;
+  background: #e79e42;
+  border-radius: 0;
+  padding: 0.5rem 1.8rem;
+}
+
+@media (max-width: 991px) {
+  .video-btn {
+    font-size: 13px;
+  }
+}
+
+.video-btn:hover {
+  background: #da861c;
+}
+
+.support {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.support__social {
+  margin: 10px 0 0 0;
+}
+
+.support a {
+  color: #555;
+  background: #ededed;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.support a:hover {
+  background: #555;
+  color: #ededed;
+}
+
+.carousel-control-line {
+  width: 25px;
+  height: 1px;
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .section-hero .heroslider-img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.section-hero .adani-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
+}
+
+@media (max-width: 991px) {
+  .section-hero .adani-logo {
+    width: 80px;
+  }
+}
+
+.section-hero .support {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.section-hero .scrolldown {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 24px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: blink 2.5s ease-in-out infinite;
+          animation: blink 2.5s ease-in-out infinite;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  bottom: auto;
+}
+
+@media (max-width: 767px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+}
+
+.section-project {
+  background: url(../img/project-bg.jpg) no-repeat center center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-project .adani-logo {
+  width: 130px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 0px 16px 22px -19px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 16px 22px -19px rgba(0, 0, 0, 0.8);
+}
+
+.project.col1 {
+  position: relative;
+  width: 40%;
+  padding: 35px;
+}
+
+@media (max-width: 991px) {
+  .project.col1 {
+    width: 100%;
+  }
+}
+
+.col1__content {
+  margin: 15px 0 0 0;
+}
+
+.btn-outline-black {
+  border: 2px solid #333333;
+  border-radius: 0;
+  color: #333333;
+  font-family: "GothamMediumRegular", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-size: 17px;
+}
+
+.btn-outline-black:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333333;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:focus,
+.btn-outline-black:active {
+  color: white;
+}
+
+.btn-outline-black:hover:before,
+.btn-outline-black:focus:before,
+.btn-outline-black:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "NeutraTextBold", sans-serif;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.project.col2 {
+  position: relative;
+  width: 35%;
+  background: url("../img/project-col2-bg.jpg") no-repeat center center/cover;
+}
+
+@media (max-width: 991px) {
+  .project.col2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .project.col2 {
+    width: 100%;
+    min-height: 220px;
+  }
+}
+
+.project.col2 .support {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.project.col3 {
+  width: 25%;
+  padding: 35px;
+}
+
+@media (max-width: 991px) {
+  .project.col3 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project.col3 {
+    width: 100%;
+  }
+}
+
+.col3__listitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0 5px 0;
+  padding: 5px;
+}
+
+.col3__listitem .fas {
+  font-size: 6px;
+  margin-top: 5px;
+}
+
+.col3 .divider {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.col3__listcontent {
+  margin-left: 15px;
+  line-height: 1;
+  font-style: italic;
+  font-family: "GothamMediumRegular", sans-serif;
+}
+
+.col3__listcontent a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.section-title-small {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "NeutraTextBold", sans-serif;
+}
+
+.section-fortune {
+  background: url(../img/fortune-bg.jpg) no-repeat center top/cover;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .section-fortune {
+    background-position: top right;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-fortune {
+    background-position: top center;
+  }
+}
+
+.section-fortune p {
+  margin-bottom: 5px;
+}
+
+.pledge-btn {
+  border-radius: 0;
+  background: #ed1c24;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: 2px;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.pledge-btn:hover {
+  background: #c61017;
+  color: #fff;
+}
+
+.help-title {
+  font-weight: bold;
+}
+
+.help-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.help {
+  width: 29%;
+}
+
+@media (max-width: 991px) {
+  .help {
+    width: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .help {
+    width: 80%;
+  }
+}
+
+.help__img {
+  width: 100%;
+  display: block;
+  margin: 30px auto 20px auto;
+  max-width: 200px;
+}
+
+@media (max-width: 991px) {
+  .help__img {
+    width: 60%;
+  }
+}
+
+.project-line {
+  margin-left: -35px;
+  z-index: 1;
+  position: relative;
+  width: 130%;
+}
+
+@media (max-width: 991px) {
+  .project-line {
+    margin-left: -5%;
+    width: 110%;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
